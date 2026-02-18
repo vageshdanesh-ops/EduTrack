@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EduTrack - Smart Learning</title>
+  <link rel="stylesheet" href="edutrack.css">
+</head>
+<body>
+
+<h1>EduTrack - Smart Learning Platform</h1>
+
+<!-- Login Section -->
+<div id="authSection">
+  <input type="text" id="username" placeholder="Enter your name">
+  <button onclick="login()">Enter</button>
+</div>
+
+<!-- Main App -->
+<div id="appSection" class="hidden">
+
+  
+
+  <h2>📚 Learning Materials</h2>
+  <div id="materials"></div>
+
+  <h2>📝 Quiz</h2>
+  <div id="quiz"></div>
+  <button onclick="submitQuiz()">Submit Quiz</button>
+
+  <h2>📊 Progress</h2>
+  <div id="progress"></div>
+
+  <h2>💬 Peer Discussion</h2>
+  <input type="text" id="messageInput" placeholder="Ask something...">
+  <button onclick="postMessage()">Post</button>
+  <div id="discussion"></div>
+
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="edutrack.js"></script>
+</body>
+</html>
